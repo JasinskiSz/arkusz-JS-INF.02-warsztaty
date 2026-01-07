@@ -15,6 +15,12 @@ function oblicz() {
         return
     }
 
+    const nazwaPliku = document.getElementById("file-jpeg").files[0].name
+
+    const zdjecie = document.createElement("img")
+    zdjecie.src = nazwaPliku
+    document.getElementById("wynik").appendChild(zdjecie)
+
     const paragraf = document.createElement("p")
     paragraf.innerText = "321"
     document.getElementById("wynik").appendChild(paragraf)
